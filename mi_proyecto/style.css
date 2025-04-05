@@ -1,0 +1,112 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    text-align: center; /* Centrar el contenido */
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    margin-right: 20px; /* Espacio a la derecha del logo */
+    position: absolute; /* Colocar en la esquina */
+    top: 10px;
+    left: 20px;
+}
+
+.logo {
+    width: 80px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.header-title {
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* Navegación */
+nav ul {
+    display: flex;
+    justify-content: center; /* Centrar los elementos de navegación */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffa500; /* Naranja */
+}
+
+/* Contenido */
+.container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Títulos */
+.section-title {
+    font-size: 2em;
+    color: #ffa500; /* Naranja */
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ffa500;
+    padding-bottom: 10px;
+}
+
+/* Tablas */
+.bordered-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.bordered-table th, .bordered-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.bordered-table th {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.bordered-table td {
+    text-align: center;
+}
+
+/* Listas */
+ul {
+    text-align: left;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+h4.section-title {
+    font-size: 1.5em;
+    color: #ffa500;
+    margin-top: 20px;
+}

@@ -1,0 +1,175 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    background-color: #007bff; /* Azul */
+    color: white;
+    padding: 10px 20px;
+}
+
+.logo-container {
+    margin-right: 20px; /* Espacio a la derecha del logo */
+}
+
+.logo {
+    width: 100px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;
+}
+
+.header-title {
+    flex-grow: 1; /* Este elemento ocupará el espacio restante */
+    text-align: center; /* Centrar el título */
+}
+
+/* Navegación */
+nav {
+    flex-grow: 1; /* Navegación ocupará el espacio restante */
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end; /* Alinear los elementos de navegación a la derecha */
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffa500; /* Naranja */
+}
+
+/* Secciones */
+section {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #ffa500; /* Naranja */
+    margin-bottom: 15px;
+    border-bottom: 3px solid #ffa500;
+    padding-bottom: 10px;
+}
+
+p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.box-shadow {
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Formulario */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+button {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Incluye padding en el ancho */
+}
+
+button {
+    background-color: #007bff; /* Azul */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Azul más oscuro */
+}
+
+#mensaje {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 15px;
+    color: green;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start; /* Alinea los elementos al principio */
+    }
+
+    .logo {
+        width: 80px; /* Tamaño del logo en pantallas más pequeñas */
+        margin-bottom: 10px; /* Espacio entre el logo y el título */
+    }
+
+    nav ul {
+        justify-content: flex-start; /* Alinear los elementos de navegación a la izquierda */
+        padding-left: 0; /* Eliminar el relleno a la izquierda */
+    }
+
+    nav li {
+        margin: 5px 0; /* Espacio vertical entre elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .logo {
+        width: 60px; /* Tamaño más pequeño para dispositivos pequeños */
+    }
+}
